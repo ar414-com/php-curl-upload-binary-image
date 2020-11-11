@@ -6,9 +6,6 @@
 ![](https://img.shields.io/badge/coverage-100%25-green)
 ![](https://img.shields.io/badge/license-MIT-brightgreen)
 
-### Support
-[![jetbrains](https://github.com/ar414-com/nginx-rtmp-ffmpeg-conf/raw/master/assets/images/jetbrains.svg)](https://www.jetbrains.com/?from=nginx-rtmp-ffmpeg)
-
 PHP upload binary image data via CURL
 
 # Install
@@ -30,6 +27,3 @@ $fileBody = file_get_contents('https://github.com/ar414-com/ar414-com/raw/master
 
 UploadBinaryImage::upload($url,$fields,$fileName,$fileBody);
 ```
-
-#### Support Author
-[![coffee](http://cdn.ar414.com/coffee.png)](https://www.buymeacoffee.com/ar414)  [![wx](https://cdn.ar414.com/wecaht-logo.png)](https://cdn.ar414.com/wxpay_coffee.jpg)[![alipay](https://cdn.ar414.com/alipay-logo.png)](https://cdn.ar414.com/alipay_coffee.jpg)
