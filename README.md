@@ -15,15 +15,21 @@ composer require ar414/curl-upload-binary-image
 
 # Usage
 ```php
+<?php
+
+require_once '../vendor/autoload.php';
+
 use Ar414\UploadBinaryImage;
 
-$url = '192.168.4.14/upload';
-
-// according to own business
-$fields = ['token' => '7d11d63785a9dd2d14z474f147xa1c53b6d7e585e41a46eb4f3'];
-
+$url = 'http://0.4.1.4:414/upload?path=/test/';
+$fields = [];
+$fieldName = 'file';
 $fileName = 'ar414.png';
+
 $fileBody = file_get_contents('https://github.com/ar414-com/ar414-com/raw/master/assets/ar414.png');
 
-UploadBinaryImage::upload($url,$fields,$fileName,$fileBody);
+$ret = UploadBinaryImage::upload($url,$fields,$fieldName,$fileName,$fileBody);
+var_dump($ret);
+
+
 ```
